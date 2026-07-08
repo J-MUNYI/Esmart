@@ -54,7 +54,7 @@ cp .env.example .env
 ```
 
 Open `.env` and fill in:
-- `MONGO_URI` — from step 1
+- `MONGO_URI
 - `JWT_SECRET` — generate one:
   ```bash
   node -e "console.log(require('crypto').randomBytes(64).toString('hex'))"
