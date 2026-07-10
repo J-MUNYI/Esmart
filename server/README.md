@@ -85,8 +85,8 @@ confirm the database name is in the URI.
 ---
 
 ## 5. Create Your Admin Account (no seed script, no manual DB editing)
-
-This is the one part that replaces "seed data" — you register a real
+ 
+This is thepart that replaces "seed data" — you register a real
 account through the real API, then promote it to admin with one command.
 
 **Step 1 — Register yourself as a normal user.**
