@@ -146,7 +146,8 @@ stay in the same Postman session.
 Repeat steps 5–6 for each real product you want live (aim for 8–10).
 This is slower than a seed script per product, but every product this
 way has gone through real validation, real image upload, and real slug
-generation — exactly what your admin panel UI will do later.
+generation — exactly what your admin panel UI will do later. Testing endpoints.
+
 
 ---
 
