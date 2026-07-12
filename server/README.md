@@ -176,7 +176,7 @@ generation — exactly what your admin panel UI will do later. Testing endpoints
 - [ ] Re-run `npm run make-admin -- you@example.com` against production
       once deployed (your dev and prod databases are separate unless
       you reused the same Atlas cluster)
-- [ ] Confirm `.env` was never committed:
+- [ ] Confirm `.env` was not committed in any instance:
       `git log --all --full-history -- server/.env` should return nothing
 
 ---
