@@ -153,7 +153,7 @@ generation — exactly what your admin panel UI will do later. Testing endpoints
 
 ## 7. What's Already Production-Hardened Here
 
-- Passwords hashed with bcrypt, never stored or returned in plaintext
+- Passwords hashed with bcrypt, never stored/returned in plaintext
 - JWT in httpOnly cookie (not localStorage) — immune to XSS token theft
 - Cookie `secure` + `sameSite` flags auto-switch based on `NODE_ENV`
 - All mutating routes (`POST`/`PUT`/`DELETE` on products, order status
