@@ -93,7 +93,7 @@ account through the real API, then promote it to admin with one command.
 Open Postman, import `Esmart-Beauty.postman_collection.json` (File → Import),
 set the collection variable `baseUrl` to `http://localhost:5000`.
 
-Run **Auth - Register** with your real email/password in the body.
+Run **Auth - Register** with your real email and password in the body.
 You should get a `201` response with your user object.
 
 **Step 2 — Promote yourself to admin:**
