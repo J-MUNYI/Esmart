@@ -1,0 +1,40 @@
+:root {
+  /* Brand palette */
+  --blush: #F9E8E8;
+  --rose: #E8A5A5;
+  --deep-rose: #C97A7A;
+  --cream: #FDF6F0;
+  --warm-cream: #F5EBE0;
+  --latte: #D4B896;
+
+  /* Neutrals */
+  --ink: #2C1A1A;
+  --slate: #6B4F4F;
+  --mist: #B89E9E;
+
+  /* Semantic */
+  --success: #6DBE8A;
+  --error: #E05252;
+  --whatsapp: #25D366;
+
+  /* Typography */
+  --font-display: 'Cormorant Garamond', serif;
+  --font-heading: 'Jost', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-accent: 'Italiana', serif;
+
+  /* Spacing scale */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 48px;
+  --space-2xl: 96px;
+
+  /* Motion */
+  --ease-soft: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --dur-fast: 150ms;
+  --dur-base: 250ms;
+  --dur-slow: 400ms;
+}

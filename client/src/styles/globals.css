@@ -1,0 +1,42 @@
+@import './tokens.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Never remove focus outline — style it instead (WCAG requirement) */
+:focus {
+  outline: none;
+}
+:focus-visible {
+  outline: 2px solid var(--deep-rose);
+  outline-offset: 2px;
+}
+
+/* Hide scrollbar on horizontal-scroll rows but keep it functional */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* iOS safe area for fixed bottom elements (WhatsApp FAB) */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
