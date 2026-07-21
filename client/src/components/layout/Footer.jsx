@@ -1,6 +1,6 @@
 // Footer.jsx
 import { Link } from 'react-router-dom'
-import { Instagram, Facebook, MessageCircle } from 'lucide-react'
+import { Camera, Link as LinkIcon, MessageCircle } from 'lucide-react'
 import EsmartLogo from '../atoms/EsmartLogo'
 import { openWhatsApp, whatsAppMessages } from '../../utils/whatsapp'
 
@@ -35,10 +35,10 @@ export default function Footer() {
           </button>
           <div className="flex gap-3">
             <a href="#" aria-label="Instagram" className="text-slate hover:text-deep-rose">
-              <Instagram size={20} />
+              <Camera size={20} />
             </a>
             <a href="#" aria-label="Facebook" className="text-slate hover:text-deep-rose">
-              <Facebook size={20} />
+              <LinkIcon size={20} />
             </a>
           </div>
         </div>
