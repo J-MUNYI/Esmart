@@ -16,9 +16,9 @@ export default function Newsletter() {
   return (
     <section className="max-w-7xl mx-auto px-4 py-10">
       <div className="rounded-card bg-ink px-6 py-10 sm:px-12 sm:py-14 text-center">
-        <h2 className="font-display text-3xl text-cream">Stay in the Glow</h2>
+        <h2 className="font-display text-3xl text-cream">Follow us on TikTok</h2>
         <p className="font-body text-cream/70 mt-2 max-w-md mx-auto">
-          New arrivals, offers and skincare tips — straight to your inbox.
+          Join our TikTok community for beauty tutorials, product demos, and exclusive offers.
         </p>
 
         {status === 'success' ? (

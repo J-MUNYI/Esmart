@@ -41,7 +41,7 @@ export default function SearchBar() {
 
   return (
     <div ref={wrapperRef} className="relative w-full max-w-md">
-      <div className="flex items-center bg-warm-cream rounded-full pl-4 pr-1 py-1">
+      <div className="flex items-center bg-warm-cream rounded-full pl-4 pr-1 py-1 border border-transparent hover:border-cream/50 transition-colors">
         <Search size={18} className="text-slate shrink-0" />
         <input
           type="text"

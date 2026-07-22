@@ -1,4 +1,3 @@
-// Footer.jsx
 import { Link } from 'react-router-dom'
 import { Camera, Link as LinkIcon, MessageCircle } from 'lucide-react'
 import EsmartLogo from '../atoms/EsmartLogo'
