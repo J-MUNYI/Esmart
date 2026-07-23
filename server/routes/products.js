@@ -68,7 +68,7 @@ router.post(
     body('description').trim().notEmpty().withMessage('Description is required'),
     body('price').isFloat({ min: 0 }).withMessage('Price must be a positive number'),
     body('category')
-      .isIn(['skincare', 'haircare', 'makeup', 'fragrance', 'bodycare'])
+      .isIn(['makeup', 'bags', 'accessories', 'hair', 'fragrance', 'bodycare'])
       .withMessage('Invalid category'),
     body('images').isArray({ min: 1 }).withMessage('At least one image is required'),
   ],

@@ -9,7 +9,7 @@ const productSchema = new mongoose.Schema(
     originalPrice: { type: Number, min: 0 },
     category: {
       type: String,
-      enum: ['skincare', 'haircare', 'makeup', 'fragrance', 'bodycare'],
+      enum: ['makeup', 'bags', 'accessories', 'hair', 'fragrance', 'bodycare'],
       required: true,
     },
     images: [
