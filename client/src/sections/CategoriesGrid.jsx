@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom'
 
 const categories = [
-  { label: 'Skincare', value: 'skincare', color: 'from-blush to-warm-cream' },
-  { label: 'Haircare', value: 'haircare', color: 'from-rose to-blush' },
-  { label: 'Makeup', value: 'makeup', color: 'from-deep-rose to-rose' },
-  { label: 'Fragrance', value: 'fragrance', color: 'from-latte to-warm-cream' },
+  { label: 'Make-up', value: 'makeup', color: 'from-blush to-warm-cream' },
+  { label: 'Bags', value: 'bags', color: 'from-rose to-blush' },
+  { label: 'Accessories', value: 'accessories', color: 'from-deep-rose to-rose' },
+  { label: 'Hair accessories', value: 'hair', color: 'from-latte to-warm-cream' },
 ]
 
 export default function CategoriesGrid() {

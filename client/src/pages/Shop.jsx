@@ -7,10 +7,10 @@ import api from '../utils/api'
 
 const categories = [
   { label: 'All', value: '' },
-  { label: 'Skincare', value: 'skincare' },
-  { label: 'Haircare', value: 'haircare' },
-  { label: 'Makeup', value: 'makeup' },
-  { label: 'Fragrance', value: 'fragrance' },
+  { label: 'Make-up', value: 'makeup' },
+  { label: 'Bags', value: 'bags' },
+  { label: 'Accessories', value: 'accessories' },
+  { label: 'Hair accessories', value: 'hair' },
   { label: 'Body Care', value: 'bodycare' },
 ]
 

@@ -41,7 +41,7 @@ export default function SearchBar() {
 
   return (
     <div ref={wrapperRef} className="relative w-full max-w-md">
-      <div className="flex items-center bg-warm-cream rounded-full pl-4 pr-1 py-1 border border-transparent hover:border-cream/50 transition-colors">
+      <div className="flex items-center bg-warm-cream rounded-full pl-4 pr-1 py-1 border-rounded-full border-transparent hover:border-cream/50 transition-colors">
         <Search size={18} className="text-slate shrink-0" />
         <input
           type="text"
@@ -51,8 +51,8 @@ export default function SearchBar() {
             setOpen(true)
           }}
           onFocus={() => setOpen(true)}
-          placeholder="Search skincare, makeup & more"
-          className="w-full bg-transparent border-none outline-none px-3 py-2 font-body text-sm text-ink placeholder:text-mist"
+          placeholder="Search products"
+          className="flex-1 min-h-[48px] bg-transparent border border-transparent rounded-full px-5 text-pink placeholder:text-slate font-body focus:outline-none focus:border-transparent"
           aria-label="Search products"
         />
         {query && (
@@ -66,7 +66,7 @@ export default function SearchBar() {
         )}
         <button
           aria-label="Search"
-          className="min-h-[40px] min-w-[40px] flex items-center justify-center rounded-full bg-deep-rose text-cream shrink-0"
+          className="min-h-[40px] min-w-[40px] flex items-center justify-center border-rounded-full border-cream/50 rounded-full bg-deep-rose text-cream shrink-0"
         >
           <Search size={16} />
         </button>
