@@ -45,6 +45,7 @@ export default function Footer() {
 
       <div className="border-t border-latte/40 py-4 text-center text-xs font-body text-mist">
         © {new Date().getFullYear()} Esmart Beauty. All rights reserved.
+        <p className="mt-2">A Muny1verse creation 🤍.</p>
       </div>
     </footer>
   )
