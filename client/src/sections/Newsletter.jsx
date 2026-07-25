@@ -18,7 +18,7 @@ export default function Newsletter() {
             Follow on TikTok
           </a>
         </div>
-        <p className="text-xs font-body text-cream/40 mt-3">For latest products and pyre vibesy.</p>
+        <p className="text-xs font-body text-cream/40 mt-3">For latest products and pure vibes.</p>
       </div>
     </section>
   )
