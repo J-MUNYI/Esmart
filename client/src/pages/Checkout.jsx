@@ -48,7 +48,7 @@ export default function Checkout() {
 
       <div className="bg-warm-cream rounded-card p-4 mb-6">
         <p className="font-body text-sm text-slate">
-          Payment is confirmed manually via M-Pesa after you place your order — our
+          Payment is confirmed manually via M-Pesa message after you place your order — our
           team will reach out on the phone number below with till/paybill details.
         </p>
       </div>

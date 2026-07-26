@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = import.meta.env.VITE_WHATSAPP_NUMBER || '254700000000'
+const WHATSAPP_NUMBER = import.meta.env.VITE_WHATSAPP_NUMBER || '254722462032'
 
 export const openWhatsApp = ({ message }) => {
   const encoded = encodeURIComponent(message)
