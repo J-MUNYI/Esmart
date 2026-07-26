@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom'
 import { Camera, Link as LinkIcon, MessageCircle } from 'lucide-react'
-import EsmartLogo from '../atoms/EsmartLogo'
 import { openWhatsApp, whatsAppMessages } from '../../utils/whatsapp'
+import EsmartLogo from '../atoms/EsmartLogo'
 
 export default function Footer() {
   return (
     <footer className="bg-warm-cream border-t border-latte/40 mt-16">
       <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 sm:grid-cols-3 gap-8">
         <div>
-          <EsmartLogo variant="light" />
+          <EsmartLogo variant="footer" />
           <p className="font-accent italic text-slate mt-2">Glow Naturally.</p>
           <p className="text-sm font-body text-slate mt-3 max-w-xs">
             Clean, curated beauty essentials for every routine.

@@ -22,9 +22,15 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-30 bg-cream/95 backdrop-blur-sm border-b border-latte/40">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
-        <Link to="/" className="shrink-0">
-          <EsmartLogo variant="light" />
-        </Link>
+        <Link to="/" className="shrink-0 flex items-center gap-2">
+            <EsmartLogo variant="navbar" />
+            <div className="flex flex-col leading-none">
+              <span className="font-display text-lg tracking-wide text-ink">Esmart</span>
+              <span className="font-heading text-[8px] tracking-[0.2em] text-slate -mt-0.5">
+                BEAUTY
+              </span>
+            </div>
+          </Link>
 
         <div className="hidden md:block flex-1 max-w-md">
           <SearchBar />
