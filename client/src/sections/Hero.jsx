@@ -38,25 +38,25 @@ export default function Hero({ heroProduct }) {
               </div>
             </>
           ) : (
-            <p className="text-slate font-body text-sm">New products coming soon.</p>
+            <p className="text-slate font-body text-sm">Latest products in stock.</p>
           )}
         </div>
 
         {/* Best Value Offers */}
-        <div className="relative rounded-card overflow-hidden bg-gradient-to-br from-rose to-deep-rose min-h-[200px] p-6 flex flex-col justify-between">
+        <div className="relative rounded-card overflow-hidden bg-gradient-to-br from-rose to-deep-rose min-h-[300px] p-6 flex flex-col justify-between">
           <div className="flex items-start justify-between">
             <h3 className="font-heading text-xl font-semibold text-cream">Best Value<br />Offers</h3>
             <Heart size={20} className="text-cream/80" />
           </div>
           <div>
             <span className="inline-block bg-cream text-deep-rose text-xs font-heading font-semibold px-3 py-1 rounded-full">
-              Up to 70% off
+              Best Sellers
             </span>
           </div>
         </div>
 
         {/* Glow Your Way */}
-        <div className="relative rounded-card overflow-hidden bg-ink min-h-[200px] p-6 flex flex-col justify-between">
+        <div className="relative rounded-card overflow-hidden bg-ink min-h-[300px] p-6 flex flex-col justify-between">
           <div>
             <h3 className="font-heading text-lg font-semibold text-cream">Glow Your Way</h3>
             <p className="text-sm font-body text-cream/70 mt-1">

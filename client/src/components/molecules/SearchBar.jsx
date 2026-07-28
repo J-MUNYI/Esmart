@@ -52,7 +52,7 @@ export default function SearchBar() {
           }}
           onFocus={() => setOpen(true)}
           placeholder="Search products"
-          className="flex-1 min-h-[48px] bg-transparent border border-transparent rounded-full px-5 text-pink placeholder:text-slate font-body focus:outline-none focus:border-transparent"
+          className="flex-1 min-h-[48px] bg-transparent border border-transparent hover:border-pink/100 rounded-full px-5 text-pink placeholder:text-slate font-body focus:outline-none focus:border-transparent"
           aria-label="Search products"
         />
         {query && (

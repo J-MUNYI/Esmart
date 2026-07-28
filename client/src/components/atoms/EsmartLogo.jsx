@@ -12,7 +12,7 @@ export default function EsmartLogo({ variant = 'navbar', className = '' }) {
       src={logoMark}
       alt="Esmart Beauty"
       className={`${sizes[variant]} w-auto object-contain ${className}`}
-      style={{ filter: 'brightness(0.9) contrast(1.2) drop-shadow(0 2px 4px rgba(201,122,122,0.25)' }}
+      style={{ filter: 'brightness(0.6) contrast(1.0) drop-shadow(0 2px 4px rgba(201, 122, 122, 0.32)' }}
     />
   )
 }
