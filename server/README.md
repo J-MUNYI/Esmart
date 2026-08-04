@@ -160,7 +160,7 @@ generation — exactly what your admin panel UI will do later. Testing endpoints
   updates) require `protect` + `adminOnly`
 - Input validation on register, login, and product creation
   (`express-validator`)
-- Rate limiting on auth routes (10 attempts / 15 min) — blocks brute-force
+- Rate-limiting on auth routes (10 attempts / 15 min) — blocks brute-force
 - Centralized error handler — no stack traces leak in production responses
 - Text index on Product `name`/`description` — search is fast, not a
   full collection scan
