@@ -1,6 +1,6 @@
 const TikTokIcon = () => (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 2v12M9 2h6M12 14v4M9 16h6" />
+    <path d="M12 2v14M6 6h12M8 16h8" />
   </svg>
 )
 

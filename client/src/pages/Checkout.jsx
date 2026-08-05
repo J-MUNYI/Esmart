@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { MessageCircle, Copy } from 'lucide-react'
 import Button from '../components/atoms/Button'
 import { useCart } from '../context/CartContext'
 import { useUI } from '../context/UIContext'
 import { formatPrice } from '../utils/formatPrice'
+import { openWhatsApp, whatsAppMessages } from '../utils/whatsapp'
 import api from '../utils/api'
 
 export default function Checkout() {
@@ -12,8 +14,9 @@ export default function Checkout() {
   const navigate = useNavigate()
 
   const [form, setForm] = useState({ fullName: '', phone: '', address: '', city: '' })
-  const [status, setStatus] = useState('idle') // idle | loading | error
+  const [status, setStatus] = useState('idle')
   const [error, setError] = useState(null)
+  const [orderSuccess, setOrderSuccess] = useState(false)
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -31,8 +34,8 @@ export default function Checkout() {
         totalPrice: total,
       })
       clearCart()
-      showToast('Order placed! We will confirm payment via M-Pesa shortly.')
-      navigate('/')
+      setOrderSuccess(true)
+      showToast('Order placed successfully!')
     } catch (err) {
       setError(
         err.response?.data?.message ||
@@ -40,6 +43,50 @@ export default function Checkout() {
       )
       setStatus('error')
     }
+  }
+
+  const handleWhatsAppOrder = () => {
+    const orderDetails = {
+      customerName: form.fullName,
+      phone: form.phone,
+      address: form.address,
+      city: form.city,
+      items: items,
+      total: total
+    }
+    openWhatsApp({ message: whatsAppMessages.order(orderDetails) })
+  }
+
+  if (orderSuccess) {
+    return (
+      <div className="max-w-2xl mx-auto px-4 py-8">
+        <h1 className="font-display text-3xl text-ink mb-6">Order Confirmed!</h1>
+        
+        <div className="bg-green-50 border border-green-200 rounded-card p-6 mb-6 text-center">
+          <p className="font-heading text-lg text-green-800 mb-2">Thank you for your order!</p>
+          <p className="font-body text-slate mb-4">Your order has been placed. You will receive a confirmation message shortly.</p>
+        </div>
+
+        <Button 
+          variant="primary" 
+          size="lg" 
+          className="w-full max-w-md mx-auto"
+          onClick={handleWhatsAppOrder}
+        >
+          <MessageCircle size={18} className="mr-2" />
+          Message Order via WhatsApp
+        </Button>
+
+        <div className="text-center mt-6">
+          <Button 
+            variant="ghost" 
+            onClick={() => navigate('/')}
+          >
+            Continue Shopping
+          </Button>
+        </div>
+      </div>
+    )
   }
 
   return (
