@@ -40,8 +40,8 @@ export default function SearchBar() {
   }, [debounced])
 
   return (
-    <div ref={wrapperRef} className="relative w-full max-w-md">
-      <div className="flex items-center bg-warm-cream rounded-full pl-4 pr-1 py-1 border-rounded-full border-transparent hover:border-cream/50 transition-colors">
+    <div ref={wrapperRef} className="relative w-full max-w-md group">
+      <div className="flex items-center bg-warm-cream rounded-full px-4 gap-2 py-2 transition-shadow duration-200 hover:shadow-[0_0_0_2px_rgba(201,122,122,0.7)]">
         <Search size={18} className="text-slate shrink-0" />
         <input
           type="text"
@@ -52,21 +52,21 @@ export default function SearchBar() {
           }}
           onFocus={() => setOpen(true)}
           placeholder="Search products"
-          className="flex-1 min-h-[48px] bg-transparent border border-transparent hover:border-pink/100 rounded-full px-5 text-pink placeholder:text-slate font-body focus:outline-none focus:border-transparent"
+          className="flex-1 bg-transparent border-2 border-transparent rounded-full px-3 py-1.5 text-base font-body text-ink placeholder:text-slate focus:ring-0 focus:outline-none"
           aria-label="Search products"
         />
         {query && (
           <button
             onClick={() => setQuery('')}
             aria-label="Clear search"
-            className="p-1 mr-1 text-slate hover:text-ink"
+            className="p-1 text-slate hover:text-ink"
           >
             <X size={16} />
           </button>
         )}
         <button
           aria-label="Search"
-          className="min-h-[40px] min-w-[40px] flex items-center justify-center border-rounded-full border-cream/50 rounded-full bg-deep-rose text-cream shrink-0"
+          className="min-h-[40px] min-w-[40px] flex items-center justify-center rounded-full bg-deep-rose text-cream shrink-0"
         >
           <Search size={16} />
         </button>
