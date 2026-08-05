@@ -95,7 +95,7 @@ export default function Navbar() {
               to={`/shop?category=${cat.value}`}
               className={({ isActive }) =>
                 `shrink-0 px-4 py-2 rounded-full text-sm font-body transition-colors ${
-                  isActive ? 'bg-deep-rose text-cream' : 'text-slate hover:bg-warm-cream'
+                  isActive ? 'bg-deep-rose text-cream' : 'text-slate hover:bg-warm-cream/90'
                 }`
               }
             >
@@ -115,7 +115,7 @@ export default function Navbar() {
                 key={cat.value}
                 to={`/shop?category=${cat.value}`}
                 onClick={toggleMobileMenu}
-                className="min-h-[48px] flex items-center px-3 rounded-xl font-body text-ink hover:bg-warm-cream"
+                className="min-h-[48px] flex items-center px-3 rounded-xl font-body text-ink hover:bg-warm-cream/90"
               >
                 {cat.label}
               </NavLink>
@@ -123,7 +123,7 @@ export default function Navbar() {
             <NavLink
               to="/wishlist"
               onClick={toggleMobileMenu}
-              className="min-h-[48px] flex items-center gap-2 px-3 rounded-xl font-body text-ink hover:bg-warm-cream"
+              className="min-h-[48px] flex items-center gap-2 px-3 rounded-xl font-body text-ink hover:bg-warm-cream/90"
             >
               <Heart size={18} /> Wishlist
             </NavLink>
@@ -133,7 +133,7 @@ export default function Navbar() {
                   logout()
                   toggleMobileMenu()
                 }}
-                className="min-h-[48px] flex items-center gap-2 px-3 rounded-xl font-body text-ink hover:bg-warm-cream text-left"
+                className="min-h-[48px] flex items-center gap-2 px-3 rounded-xl font-body text-slate hover:bg-warm-cream/90 text-left"
               >
                 <User size={18} /> Log out
               </button>
