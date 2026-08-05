@@ -128,6 +128,23 @@ stay in the same Postman session.
      ```json
      { "url": "https://res.cloudinary.com/.../esmart-products/abc123.jpg", "publicId": "esmart-products/abc123" }
      ```
+     - Use this command on Postman to create new product once url is copied:
+            {
+      "name": "Rose Glow Serum",
+      "description": "Hydrating rose serum for all skin types",
+      "price": 2499,
+      "originalPrice": 3499,
+      "category": "skincare",
+      "images": [
+         {
+            "url": "https://res.cloudinary.com/your-cloud-name/image/upload/v1234567890/esmart-products/rose-serum.jpg"
+         }
+      ],
+      "badges": ["new"],
+      "featured": true,
+      "stock": 15,
+      "rating": 4.8
+           }...This appears on the featured section.
    - **Copy this URL** — you'll use it in the next step
 6. **Products - Create (admin)**:
    - Paste the Cloudinary URL from step 5 into the `images[0].url` field in the request body
