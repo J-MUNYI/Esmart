@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { X } from 'lucide-react'
+import { X, Eye, EyeOff } from 'lucide-react'
 import Button from '../atoms/Button'
 import { useAuth } from '../../context/AuthContext'
 import { useUI } from '../../context/UIContext'
@@ -10,10 +10,10 @@ export default function AuthModal() {
 
   const [tab, setTab] = useState(authModalTab)
   const [form, setForm] = useState({ name: '', email: '', password: '' })
-  const [status, setStatus] = useState('idle') // idle | loading | error
+  const [status, setStatus] = useState('idle')
   const [error, setError] = useState(null)
+  const [showPassword, setShowPassword] = useState(false)
 
-  // Sync tab when opened from different triggers (e.g. wishlist gate opens 'signup')
   if (authModalOpen && tab !== authModalTab && status === 'idle') {
     setTab(authModalTab)
   }
@@ -31,6 +31,7 @@ export default function AuthModal() {
         showToast('Welcome back!')
       }
       setForm({ name: '', email: '', password: '' })
+      setShowPassword(false)
       closeAuthModal()
     } catch (err) {
       setError(
@@ -38,9 +39,12 @@ export default function AuthModal() {
           "We couldn't complete that. Check your details and try again."
       )
       setStatus('error')
-      return
     }
     setStatus('idle')
+  }
+
+  const handleForgotPassword = () => {
+    showToast('Forgot password feature coming soon!')
   }
 
   return (
@@ -129,16 +133,39 @@ export default function AuthModal() {
             <label htmlFor="password" className="text-sm font-body text-slate">
               Password
             </label>
-            <input
-              id="password"
-              type="password"
-              required
-              minLength={8}
-              value={form.password}
-              onChange={(e) => setForm({ ...form, password: e.target.value })}
-              className="w-full mt-1 bg-white border border-latte rounded-xl px-4 py-3 font-body text-ink focus:outline-none focus:border-deep-rose"
-            />
+            <div className="relative">
+              <input
+                id="password"
+                type={showPassword ? 'text' : 'password'}
+                required
+                minLength={8}
+                value={form.password}
+                onChange={(e) => setForm({ ...form, password: e.target.value })}
+                className="w-full mt-1 bg-white border border-latte rounded-xl px-4 py-3 pr-12 font-body text-ink focus:outline-none focus:border-deep-rose"
+              />
+              <button
+                type="button"
+                onClick={() => setShowPassword(!showPassword)}
+                className="absolute right-3 top-1/2 -translate-y-1/2 min-h-[40px] min-w-[40px] flex items-center justify-center rounded-full text-slate hover:text-ink"
+              >
+                {showPassword ? (
+                  <EyeOff size={18} className="opacity-60" />
+                ) : (
+                  <Eye size={18} className="opacity-60" />
+                )}
+              </button>
+            </div>
           </div>
+
+          {tab === 'login' && (
+            <button
+              type="button"
+              onClick={handleForgotPassword}
+              className="text-xs font-body text-deep-rose hover:text-[#b96868] -ml-1"
+            >
+              Forgot password?
+            </button>
+          )}
 
           {error && (
             <p role="alert" className="text-sm text-error font-body">
