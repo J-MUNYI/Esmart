@@ -20,6 +20,7 @@ export default {
         heading: ['Jost', 'sans-serif'],
         body: ['"DM Sans"', 'sans-serif'],
         accent: ['Italiana', 'serif'],
+        monospace: ['"DM Mono"', 'monospace'],
       },
       borderRadius: {
         card: '20px',
