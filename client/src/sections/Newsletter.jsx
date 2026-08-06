@@ -1,8 +1,4 @@
-const TikTokIcon = () => (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 2v14M6 6h12M8 16h8" />
-  </svg>
-)
+import TikTokIcon from '../components/atoms/TikTokIcon'
 
 export default function Newsletter() {
   return (
@@ -19,7 +15,7 @@ export default function Newsletter() {
             rel="noopener noreferrer"
             className="flex-1 min-h-[48px] bg-deep-rose text-cream hover:bg-[#b96868] shadow-card hover:shadow-hover inline-flex items-center justify-center gap-2 font-heading font-medium rounded-full transition-all duration-200 active:scale-95 focus-visible:ring-2 focus-visible:ring-deep-rose focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none text-base px-6 py-3"
           >
-            <TikTokIcon /> Follow on TikTok
+            <TikTokIcon size={18} /> Follow on TikTok
           </a>
         </div>
         <p className="text-xs font-body text-cream/40 mt-3">For latest products and pure vibes.</p>
