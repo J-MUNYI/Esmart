@@ -68,7 +68,7 @@ export default function Footer() {
               <WhatsAppIcon size={16} /> Chat on WhatsApp
             </button>
             <a href="https://tiktok.com/@jtc_g125" aria-label="TikTok" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-body text-slate hover:text-deep-rose self-start">
-              <TikTokIcon size={16} /> Engage with us on TikTok
+              <TikTokIcon size={16} /> Engage on TikTok
             </a>
           </div>
         </div>
