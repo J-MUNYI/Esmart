@@ -6,7 +6,7 @@ import { useCart } from '../context/CartContext'
 import { useUI } from '../context/UIContext'
 import { formatPrice } from '../utils/formatPrice'
 import { openWhatsApp, whatsAppMessages } from '../utils/whatsapp'
-import api from '../utils/api'
+//import api from '../utils/api'
 
 export default function Checkout() {
   const { items, total, clearCart } = useCart()
@@ -14,11 +14,16 @@ export default function Checkout() {
   const navigate = useNavigate()
 
   const [form, setForm] = useState({ fullName: '', phone: '', address: '', city: '' })
-  const [status, setStatus] = useState('idle')
-  const [error, setError] = useState(null)
-  const [orderSuccess, setOrderSuccess] = useState(false)
+  //const [status, setStatus] = useState('idle')
+  //const [error, setError] = useState(null)
+  //const [orderSuccess, setOrderSuccess] = useState(false)
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
+  e.preventDefault()
+  handleWhatsAppOrder()
+  } 
+
+  {/*const handleSubmit = async (e) => {
     e.preventDefault()
     setStatus('loading')
     setError(null)
@@ -43,7 +48,7 @@ export default function Checkout() {
       )
       setStatus('error')
     }
-  }
+  }*/}
 
   const handleWhatsAppOrder = () => {
     const orderDetails = {
@@ -57,7 +62,7 @@ export default function Checkout() {
     openWhatsApp({ message: whatsAppMessages.order(orderDetails) })
   }
 
-  if (orderSuccess) {
+  {/*if (orderSuccess) {
     return (
       <div className="max-w-2xl mx-auto px-4 py-8">
         <h1 className="font-display text-3xl text-ink mb-6">Order Confirmed!</h1>
@@ -87,7 +92,7 @@ export default function Checkout() {
         </div>
       </div>
     )
-  }
+  }*/}
 
   return (
     <div className="max-w-2xl mx-auto px-4 py-8">
@@ -160,14 +165,14 @@ export default function Checkout() {
           <span className="font-heading font-semibold text-xl text-ink">{formatPrice(total)}</span>
         </div>
 
-        {error && (
+        {/*{error && (
           <p role="alert" className="text-sm text-error font-body">
             {error}
           </p>
-        )}
+        )}*/}
 
-        <Button type="submit" variant="primary" size="lg" className="w-full" disabled={status === 'loading'}>
-          {status === 'loading' ? 'Placing order…' : 'Place Order'}
+        <Button type="submit" variant="primary" size="lg" className="w-full">
+          Place Order
         </Button>
       </form>
     </div>
