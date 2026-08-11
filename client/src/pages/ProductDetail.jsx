@@ -135,7 +135,7 @@ export default function ProductDetail() {
               }
               className="flex-1"
             >
-              Enquire
+              Inquire
             </Button>
           </div>
         </div>
