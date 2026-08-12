@@ -11,7 +11,7 @@ export default function About() {
         that actually works for you.
       </p>
       <p className="font-body text-slate leading-relaxed mt-4">
-        We're proud to be Kenyan-based, bringing beauty essentials
+        Bringing beauty essentials
         that fit real routines and real budgets.
       </p>
     </div>
