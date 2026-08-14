@@ -131,8 +131,8 @@ and expected until you mark a product `featured: true` via the
 `PUT /api/products/:id` endpoint from the backend's Postman collection.
 It is not a bug; it's the empty state working as designed.
 
-**If you see a network/CORS error in the browser console** — double
-check step 3 above, and confirm the backend is actually running
+**If you see a network or CORS error in the browser console** — double
+check step 3 above, and confirm backend is actually running
 (`npm run dev` in the `server/` folder, separate terminal).
 
 ---
