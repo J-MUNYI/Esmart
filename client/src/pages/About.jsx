@@ -6,7 +6,7 @@ export default function About() {
       <p className="font-body text-slate leading-relaxed">
         Esmart Beauty started with a simple belief: quality and pocket friendly beauty                                                        
         products shouldn't be complicated, and they should feel like they were
-        made with you in mind. We curate clean, effective products across
+        made with you in mind. We deal in pocket friendly, effective products across
         makeup, bags, hair accessories and body care — so you can build a routine
         that actually works for you.
       </p>
