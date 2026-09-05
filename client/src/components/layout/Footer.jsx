@@ -29,7 +29,7 @@ export default function Footer() {
           <h4 className="font-heading font-medium text-ink mb-3">Quick Links</h4>
           <nav className="flex flex-col gap-2 text-sm font-body text-slate">
             <Link to="/" className="hover:text-deep-rose">Home</Link>
-            <Link to="/shop" className="hover:text-deep-rose">Shop All Products</Link>
+            <Link to="/shop" className="hover:text-deep-rose">Shop Available Products</Link>
             <Link to="/about" className="hover:text-deep-rose">About Us</Link>
             <Link to="/wishlist" className="hover:text-deep-rose">Wishlist</Link>
             <Link to="/account" className="hover:text-deep-rose">My Account</Link>
