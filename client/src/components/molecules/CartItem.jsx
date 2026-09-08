@@ -1,4 +1,3 @@
-// CartItem.jsx
 import { Minus, Plus, Trash2 } from 'lucide-react'
 import { formatPrice } from '../../utils/formatPrice'
 import { useCart } from '../../context/CartContext'
