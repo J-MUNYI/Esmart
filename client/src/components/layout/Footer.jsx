@@ -21,7 +21,7 @@ export default function Footer() {
             </div>
           </Link>
           <p className="text-sm font-body text-slate mt-3 max-w-xs">
-            Clean, curated beauty essentials for every routine.
+            Clean, well suited and pocket friendly beauty essentials for every routine.
           </p>
         </div>
 
