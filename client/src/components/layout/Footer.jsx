@@ -49,7 +49,7 @@ export default function Footer() {
             </div>
             <div className="flex items-center gap-2">
               <MapPin size={24} className="text-deep-rose" />
-              <span>Dubois Beauty Building shop G14;Juction Trade Centre shop G125.</span>
+              <span>Dubois Beauty Building shop G14, Juction Trade Centre shop G125.</span>
             </div>
             <div className="flex items-center gap-2">
               <Clock size={16} className="text-deep-rose" />
