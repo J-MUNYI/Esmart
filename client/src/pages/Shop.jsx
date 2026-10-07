@@ -87,7 +87,7 @@ export default function Shop() {
 
           {status === 'error' && (
             <p className="text-sm font-body text-error">
-              We couldn't load products. Check your connection and try again.
+              Couldn't load products. Check your connection and try again.
             </p>
           )}
 
