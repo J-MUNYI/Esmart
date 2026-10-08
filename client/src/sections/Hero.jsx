@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom'
 import { ArrowRight, Heart, ShoppingBag } from 'lucide-react'
 import { formatPrice } from '../utils/formatPrice'
 
-// Featured content is passed in as props from Home.jsx (real product data),
-// with sensible fallbacks so the section never breaks if a field is missing.
+// Featured content is passed in as props from Home.jsx (real product data)
+// with sensible fallbacks so the section never breaks if a field is missing
 export default function Hero({ heroProduct }) {
   return (
     <section className="max-w-7xl mx-auto px-4 pt-6 pb-2">
