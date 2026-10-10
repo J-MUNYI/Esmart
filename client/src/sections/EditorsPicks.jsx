@@ -32,7 +32,7 @@ export default function EditorsPicks({ products, status }) {
       )}
 
       {status === 'success' && products.length === 0 && (
-        <p className="text-sm font-body text-slate">No featured products yet — check back soon.</p>
+        <p className="text-sm font-body text-slate">No featured products yet, check back soon.</p>
       )}
 
       {status === 'success' && products.length > 0 && (
