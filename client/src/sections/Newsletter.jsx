@@ -6,7 +6,7 @@ export default function Newsletter() {
       <div className="rounded-card bg-ink px-6 py-10 sm:px-12 sm:py-14 text-center">
         <h2 className="font-display text-3xl text-cream">Follow us on TikTok</h2>
         <p className="font-body text-cream/70 mt-2 max-w-md mx-auto">
-          Join our TikTok community for beauty tutorials, product demos, and exclusive offers.
+          Join our TikTok community for beauty tutorials, product demos, and latest products updates.
         </p>
         <div className="mt-6 flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
           <a 
