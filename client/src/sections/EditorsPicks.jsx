@@ -27,12 +27,12 @@ export default function EditorsPicks({ products, status }) {
 
       {status === 'error' && (
         <p className="text-sm font-body text-error">
-          We couldn't load products right now. Check your connection and try again.
+          We couldn't load products right now, check your connection and try again.
         </p>
       )}
 
       {status === 'success' && products.length === 0 && (
-        <p className="text-sm font-body text-slate">No featured products yet - please check back soon.</p>
+        <p className="text-sm font-body text-slate">No featured products yet, please check back soon.</p>
       )}
 
       {status === 'success' && products.length > 0 && (
