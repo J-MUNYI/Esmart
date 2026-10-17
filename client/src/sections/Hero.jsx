@@ -60,7 +60,7 @@ export default function Hero({ heroProduct }) {
           <div>
             <h3 className="font-heading text-lg font-semibold text-cream">Glow Your Way</h3>
             <p className="text-sm font-body text-cream/70 mt-1">
-              Personalise your routine just the way you want.
+              Personalise your routine just the way you want it to be.
             </p>
           </div>
           <Link
