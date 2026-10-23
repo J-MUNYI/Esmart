@@ -27,7 +27,7 @@ export default function EditorsPicks({ products, status }) {
 
       {status === 'error' && (
         <p className="text-sm font-body text-error">
-          We couldn't load products right now, check your connection and try again.
+          We couldn't load products right now. Please check your connection and try again.
         </p>
       )}
 
