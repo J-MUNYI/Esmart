@@ -18,7 +18,7 @@ export default function Newsletter() {
             <TikTokIcon size={18} /> Follow us on TikTok
           </a>
         </div>
-        <p className="text-xs font-body text-cream/40 mt-3">For latest products and pure vibes.</p>
+        <p className="text-xs font-body text-cream/40 mt-3">For latest products and updates.</p>
       </div>
     </section>
   )
