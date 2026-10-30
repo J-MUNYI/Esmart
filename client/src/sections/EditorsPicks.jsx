@@ -3,7 +3,7 @@ import { ChevronDown } from 'lucide-react'
 import ProductCard from '../components/molecules/ProductCard'
 import { ProductCardSkeleton } from '../components/atoms/Skeleton'
 
-// States: loading | success | error | empty — all handled explicitly
+// States: loading | success | error | empty...all handled explicitly
 export default function EditorsPicks({ products, status }) {
   return (
     <section className="max-w-7xl mx-auto px-4 py-10">
@@ -27,7 +27,7 @@ export default function EditorsPicks({ products, status }) {
 
       {status === 'error' && (
         <p className="text-sm font-body text-error">
-          We could load products right now. Please check your connection and try again.
+          We could not load products right now. Please check your connection and try again.
         </p>
       )}
 
