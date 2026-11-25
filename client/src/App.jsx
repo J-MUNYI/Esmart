@@ -5,7 +5,7 @@ import { CartProvider } from './context/CartContext'
 import { WishlistProvider } from './context/WishlistContext'
 import AppRouter from './router/AppRouter'
 
-// Provider order matters: WishlistContext reads from both AuthContext
+// Provider order matters-WishlistContext reads from both AuthContext
 // and UIContext (to open the auth modal and show toasts when a guest
 // tries to wishlist something), so those must wrap it.
 export default function App() {
